@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .order-button {
+            background-color: #d4b895; 
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bakso Cozy Form Order</h2>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="jumlah_orang">Untuk Berapa Orang:</label>
+            <input type="number" id="jumlah_orang" name="jumlah_orang" required>
+            
+            <label for="produk">Produk yang Dipesan:</label>
+            <select id="produk" name="produk">
+                <option value="mie_bakso">Mie Bakso</option>
+                <option value="mie_bakso_pedas">Mie Bakso Pedas</option>
+                <option value="mie_ayam">Mie Ayam</option>
+                <option value="mie_yamin">Mie Yamin</option>
+                <option value="es_teh">Es Teh</option>
+                <option value="es_jeruk">Es Jeruk</option>
+                <option value="lemon_tea">Lemon Tea</option>
+            </select>
+
+            <label for="jumlah_produk">Jumlah Produk yang Dipesan:</label>
+            <input type="number" id="jumlah_produk" name="jumlah_produk" min="1" required>
+            
+            <label for="makan_di_tempat">Makan di Tempat:</label>
+            <input type="checkbox" id="makan_di_tempat" name="makan_di_tempat" value="yes">
+
+            <hr>
+            
+            <h2><a href="https://api.whatsapp.com/send?phone=6285759609950&text=Halo%20saya%20ingin%20memesan%20makanan" class="order-button">Pesan via WhatsApp</a></h2>
+            
+            <h1> <a href="halaman.html"> ◀ </a> </h1>
+            
+        </form>
+    </div>
+</body>
+</html>
